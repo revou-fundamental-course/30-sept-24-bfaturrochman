@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Konversi Suhu</title>
         <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script.js"></script>
     </head>
     <body>
         <header>
@@ -22,21 +23,21 @@
                             konversi dalam bentuk Fahrenheit (&deg;F).
                         </p>
                     </article>
-                    <form>
+                    <form onsubmit="return false;">
                         <p>Celcius (&deg;C) :</p>
-                        <textarea name="" id=""></textarea>
+                        <textarea name="" id="input"></textarea>
 
                         <div class="tombol">
-                            <button>Konversi</button>
-                            <button>Reset</button>
+                            <button onclick="tombolKonversi()">Konversi</button>
+                            <button onclick="tombolReset()">Reset</button>
                             <button>Reverse</button>
                         </div>
 
                         <p>Fahrenheit (&deg;F) :</p>
-                        <textarea name="" id=""></textarea>
+                        <textarea name="" id="hasil1" readonly></textarea>
 
                         <p>Cara kalkulasi :</p>
-                        <textarea name="" id=""></textarea>
+                        <textarea name="" id="hasil2" readonly></textarea>
                     </form>
                     <a href="#">Fahrenheit ke Celcius</a>
                 </section>
