@@ -79,3 +79,65 @@ footer p {
     padding: 0;
     margin: 0;
 }
+
+/* responsive breakpoint */
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    header,
+    main,
+    footer {
+        width: 90%;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 601px) and (max-width: 900px) {
+    header,
+    main,
+    footer {
+        width: 70%;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    button {
+        width: auto;
+        margin: 1% 2%;
+    }
+}
+
+/* PC Devices */
+@media (min-width: 901px) {
+    header,
+    main,
+    footer {
+        width: 40rem;
+        flex-direction: row;
+        padding: 0.5rem 2rem;
+    }
+
+    textarea {
+        width: 30rem;
+    }
+
+    button {
+        width: auto;
+        margin: 1% 4%;
+    }
+}
