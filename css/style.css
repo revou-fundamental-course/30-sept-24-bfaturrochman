@@ -1,7 +1,7 @@
 /* Gaya umum untuk seluruh body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eeeeee7a;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     box-sizing: border-box;
 }
@@ -16,18 +16,28 @@ footer {
     justify-content: center;
     margin: auto;
     background-color: white;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+header:hover,
+main:hover,
+footer:hover {
+    transform: translateY(-5px);
 }
 
 /* Gaya khusus untuk header */
 header {
     text-transform: uppercase;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 2px solid #66a3ff;
 }
 
 header h1 {
     text-align: center;
+    color: #003366;
+    margin-bottom: 1rem;
 }
 
 /* Gaya untuk input dan textarea */
@@ -38,6 +48,15 @@ textarea {
     margin: 1rem 0;
     padding: 0.5rem;
     box-sizing: border-box;
+    border: 2px solid #66a3ff;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #003366;
+    outline: none;
 }
 
 /* Gaya untuk form */
@@ -48,35 +67,39 @@ form {
 
 /* Gaya untuk tombol */
 button {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 1px 2px rgb(0, 0, 0);
-    border-width: 1px;
-    padding: 0.5rem 1.2rem;
-    font-size: 0.8rem;
+    background-color: #003366;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     color: white;
     margin: 0.5rem;
     border-radius: 5px;
-    transition: background-color 0.2s, transform 0.2s;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 /* Gaya saat tombol di-hover */
 button:hover {
-    background-color: #a5a5a5;
-    transform: scale(1.1);
+    background-color: #66a3ff;
+    transform: scale(1.05);
 }
 
 /* Gaya untuk elemen matematika */
 .math {
-    font-family: math;
+    font-family: "Arial", sans-serif;
     font-size: 1.5rem;
     font-style: italic;
+    color: #003366;
 }
 
 /* Gaya untuk footer */
 footer {
-    border-top: 1px solid #bbb;
-    font-size: 0.7rem;
+    border-top: 2px solid #66a3ff;
+    font-size: 0.8rem;
     text-align: center;
+    color: #666666;
+    padding-top: 1rem;
 }
 
 footer p {
@@ -92,7 +115,7 @@ footer p {
     main,
     footer {
         flex-direction: column;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     button {
@@ -107,7 +130,7 @@ footer p {
     main,
     footer {
         flex-direction: column;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     button {
@@ -122,7 +145,7 @@ footer p {
     main,
     footer {
         flex-direction: row;
-        padding: 0.5rem 2rem;
+        padding: 2rem;
     }
 
     button {
